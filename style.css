@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+
+body, html{
+
+	height: 100%;
+	margin: 0;
+	font-family: 'roboto, Condensed', sans-serif;
+	line-height: 150%;
+	color: #444;
+	
+}
+
+
+
+.foto1{
+
+	background-image: url(img/teste-foto1.jpg);
+	min-height: 100%;
+	position: relative;
+	opacity: 0.75;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.letreiro1{
+
+	color: #000000;
+	font-size: 500%;
+	position: absolute;
+	top: 50%;
+	position: absolute;
+	width: 100%;
+	margin-left: 10px;
+	text-transform: uppercase;
+	letter-spacing: 8px; /* espa;o entre as letras*/
+	text-shadow: 0 0 10px #000;
+}
+
+.foto2{
+
+	background-image: url(img/imagem-teste2.jpg);
+	min-height: 60%;
+}
+
+.foto1, .foto2{
+
+	position: relative;
+	opacity: 0.75;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.letreiro1{
+
+	color: #fbfbfb;
+	font-size: 6vw;
+	text-shadow: 2px 2px black;
+	position: absolute;
+	top: 47%;
+}
+
+.letreiro1, .letreiro2,{
+
+	position: absolute;
+	width: 100%;
+	text-transform: uppercase;
+	letter-spacing: 8px; /* espaço entre as letras*/
+	text-shadow: 0 0 10px #000;
+}
+
+section{
+
+	padding: 50px 80px;
+}
+
+.dark{
+
+	background-color: #000000;
+	color: #fff;
+}
+
+/*--- Conteudo página inicial/intro ---*/
+
+main .container-fluid{
+	background-image: url(img/imagem1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+	height: 600px;
+	 background-attachment: fixed; /*-- parallax --*/
+	 filter: brightness(60%); /*-- deixa a imagem mais escura --*/
+
+}
+
+
+/*---  Cursos Disponíveis --*/
+
+.section-cursos{
+	padding-top: 4em;
+	padding-bottom: 4em;
+	background: #090c0d;
+	color: #acb1b4;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.section-title{
+	text-align: center;
+	margin: 0 auto;
+}
+
+#grades-cursos{
+	padding: 0 10% 0 10%;
+}
+
+.cursos{
+	display: block;
+	float: left;
+	background:#273137;
+	border-radius: 20px;
+	padding: 3%;
+	margin: 2%;
+	display: flex;
+	flex-direction: column;
+}
+
+.cursos-title{
+	text-transform: uppercase;
+	color: #bc3ef2;
+	text-align: center;
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+
+.cursos ul {
+	list-style-type: none;
+	text-align: justify;
+	padding-bottom: 2em;
+	font-family: 'Roboto', sans-serif;
+}
+
+.cursos .btn-custom{
+	height: 3em;
+	color: #000;
+	background: #9631c1;
+	transition: 2s;
+	margin: 0 auto;
+}
+
+.cursos .btn-custom:hover{
+	background-color: #381248;
+	color: #fff;
+}
+
+
+/* dropdown menu */
+
+.bg-custom{
+	background-color: black;
+}
+
+.navbar-custom {
+    background-color: black;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: white;
+    padding: 1.2rem 1rem;
+}
+/* change the link color and add padding for height */
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+    padding: 1rem 1rem;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #6959CD;
+    background-color: black; /* add background-color to active links */
+}
+
+nav a{
+	font-size: 1.4em;
+	font-family: 'Roboto Mono', monospace;
+
+}
+
+.dropdown-menu{
+	background-color: black
+
+}
+
+.dropdown-menu a{
+	color: white;
+	
+}
+
+.dropdown-menu a:hover {
+	color: #6959CD;
+    
+
+}
+
+/*Fale Conosco*/
+
+#contato{
+
+	background: #282A2D;
+	padding:50px 0px;
+	color: white;
+	margin-top: 6em;
+}
+
+#contato h4{
+
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+#contato form{
+
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+.divisao{
+	display: flex;
+
+}
+
+.ajuste{
+	width: 50%;
+	margin-left: 25px;
+}
+
+form label{
+
+	display: block;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+form textarea{
+	margin-bottom: 10px;
+}
+
+form input, form textarea{
+
+	background: white;
+	border-radius: 10px;
+	border: 2px solid gray;
+	padding: 10px 5px;
+	outline: 0;
+	color: black;
+	width: 100%;
+	resize: none;
+}	
+
+form input:focus,
+form textarea:focus{
+
+	border-color: #6959CD;
+	box-shadow: 0 0 0 1px #6959CD;   
+}
+
+form input::placeholder,
+form textarea::placeholder{
+
+	color: #fff;
+}
+
+
+.btn-custom{
+
+	margin-left: 10px;
+	border: 1px solid #6959CD;
+	background-color: #6959CD;
+	color: white;
+
+}
+
+.btn-custom:hover{
+
+	color: #6959CD;
+	background-color: white;
+	border: 1px solid #6959CD;
+
+}
+
+
+/* rodape */
+
+footer{
+	height: 120px;
+	background-color: #6959CD;
+	color: #fff;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/***---- QUEM SOMOS ----***/
+
+.proposito{
+	margin-top: 8em;
+}
+
+.equipe img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+	margin-bottom: 2em;	
+	/*width: 70%;*/
+	border-radius: 100%;
+	height: 50%;
+	/*margin: 3em 0 2em 3em;*/
+	
+
+}
+
+.equipe h5{
+	font-weight: bold;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+.equipe p{
+	font-style: italic;
+	margin: 0 auto;
+	text-align: center;
+}
