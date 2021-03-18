@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+	<meta charset="utf-8">
+	<title>Span e Div</title>
+	<style type="text/css">
+
+		/*------ menu ------*/
+		#menu{
+			/* cor de fundo */ background-color: red;
+			/* margem */ margin: 5px;
+			/* espaçamento interno (body > div)*/ padding: 5px;
+		}
+		/*------------------*/
+
+
+		/*------ conteúdo -------*/
+		#conteudoprincipal{
+			/* cor de fundo */ background-color: pink;
+			/* margem */ margin: 5px;
+			/* espaçamento interno (body > div)*/ padding: 5px;
+		}
+		/*------------------*/
+
+
+		/*----- rodapé -----*/
+		#rodape{
+			/* borda: espessurapx tipo e cor */ border: 1px solid red;
+			/* margem */ margin: 5px;
+			/* espaçamento interno (body > div)*/ padding: 5px;
+			/* cor do texto*/ color: tomato;
+			/*alinhamento do texto*/ text-align: center;
+		}
+		/*------------------*/
+
+
+		/*----- span -------*/
+		.verde{
+			/*cor do texto*/ color: red;
+		}
+		/*------------------*/
+
+
+		/*------ seletores de tags -------*/
+
+		/* parágrafos */ p{ 
+			/*alinhamento do texto*/ text-align: justify;
+			/* espaçamento interno (div > p)*/ padding: 10px;
+		}
+
+		/* links */ a{ 
+			/* cor do texto*/ color: pink;
+		}
+
+		/* header */ h3{
+			/* espaçamento interno (div > h3)*/ padding: 10px;
+			/*alinhamento do texto*/ text-align: center;
+		}
+
+		/*------------------*/
+		
+	</style>
+</head>
+
+
+<body>
+	
+	<!--------- menu --------->
+
+	<div id="menu">
+		
+		<strong><a href="/"> Home</a></strong> |
+		
+		<strong><a href="/"> Quem somos</a></strong> |
+		
+		<strong><a href="/">Contato</a></strong>
+
+	</div>
+
+	<!------------------------>
+
+
+	<!------- conteúdo -------->
+
+	<div id="conteudoprincipal">
+		
+		<h3 style="/* tipo da fonte */ font-family: arial; /* cor da fonte */ /* cor da fonte */ color: blue;">
+			
+			Conteúdo do Site
+		
+		</h3>
+		
+		<p style="/* tipo da fonte */ font-family: arial; /* espessura da fonte */ font-weight: bold; /* tamanho da fonte */ font-size: 12px; /* cor da fonte */ color: red;">
+			
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. 
+			Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		
+		</p>
+		
+	</div>
+
+	<!------------------------>
+
+
+	<!-------  rodape  -------->
+
+	<div id="rodape">
+						 <!--span .verde -->
+		&#9400; Todos os <span class="verde">direitos</span> reservados.
+
+	</div>
+
+	<!------------------------>
+
+</body>
+
+
+</html>
